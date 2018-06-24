@@ -1,0 +1,30 @@
+plugin PPTP.ppp
+noauth
+# logfile /tmp/ppp.log
+remoteaddress ""
+user ""
+password ""
+redialcount 1
+redialtimer 5
+idle 1800
+# mru 1368
+# mtu 1368
+receive-all
+novj 0:0
+ipcp-accept-local
+ipcp-accept-remote
+# noauth
+refuse-eap
+refuse-pap
+refuse-chap-md5
+hide-password
+mppe-stateless
+mppe-128
+# require-mppe-128
+looplocal
+nodetach
+# ms-dns 8.8.8.8
+usepeerdns
+# ipparam gwvpn
+defaultroute
+debug
