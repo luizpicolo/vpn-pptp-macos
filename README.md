@@ -10,10 +10,6 @@ The procedure is quite simple, you first need to create a file in /etc/ppp/peers
 
     $ sudo touch /etc/ppp/peers/vpn.example.com
 
-or
-
-    $ sudo wget /etc/ppp/peers/vpn.namevpn.com https://raw.githubusercontent.com/luizpicolo/vpn-pptp-macos/master/vpn.example.br
-
 This file will contain the configuration that pppd daemon will reference and try to connect. Change with your configuration in **remoteaddress**, **user** and **password**
 
     plugin PPTP.ppp
